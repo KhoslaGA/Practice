@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Float and Clear</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .cards {
+            border: 2px solid black;
+            /* to fix the overflow */
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
+        }
+
+        img {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="./valery-sysoev-p9OkL4yW3C8-unsplash.jpg" width="230px" srcset="">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore aliquid eveniet fuga. Dolore
+                reprehenderit, minus beatae magnam assumenda dolores ea atque ipsa fuga cum corporis ducimus! Soluta
+                reprehenderit temporibus ab autem, esse dolores minus.</p>
+        </div>
+        <div class="card"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laboriosam quas earum culpa reiciendis illum repellendus hic. Ratione expedita quo tenetur quia dolorem nostrum illum assumenda accusantium praesentium natus? Doloremque ad numquam beatae provident eum velit odio amet consequuntur quas fuga! Eum molestiae saepe illo. Reprehenderit consequuntur assumenda eligendi consectetur aperiam ratione, debitis minima laudantium officia eius doloremque quidem? Fugit ratione qui earum cum unde assumenda, quam nobis itaque corrupti, cumque quaerat deleniti voluptas nesciunt minus veniam rerum laboriosam modi hic! Exercitationem, veniam suscipit praesentium illum modi, velit atque quaerat sequi illo assumenda possimus cumque voluptates perspiciatis dicta natus quia.</p></div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>

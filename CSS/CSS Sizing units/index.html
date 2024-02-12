@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            margin: auto;
+            width: 80vw;
+            height: 10vh;
+            background-color: aquamarine;
+        }
+
+        .container {
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: auto;
+            /* height: 80vh; */
+            width: 80vw;
+            font-size: 18px;
+            background-color: aquamarine;
+            min-height: 80vh;
+
+
+        }
+
+        .container p {
+            /* 1EM = inherited */
+            /* 1REM =  inherited from Root*/
+            font-size: 1em;
+            font-size: 1rem;
+        }
+
+        .mycont {
+            /* background-color: red; */
+            border: 2px solid black;
+            box-sizing: border-box;
+            color: rgb(60, 0, 255);
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, nam!
+    </p>
+
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+
+</body>
+
+</html>
