@@ -1,0 +1,19 @@
+.red{
+    background-color: red;
+}
+
+.blue {
+    background-color: aliceblue;
+}
+
+.bg-yellow{
+    color: yellow;
+}
+
+#firstdiv{
+    font: bold;
+}
+
+#secondiv{
+    font: bolder;
+}
