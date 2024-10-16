@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+// * used to create Active Links
 import { usePathname } from "next/navigation";
 import "../styles.css";
 
