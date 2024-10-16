@@ -17,4 +17,8 @@ export default function ErrorBoundary({
 
 // * Automatically wrap a route segment and its nested children in React Error Boundary
 
-// * Create erro UI tailored to specific segments using the file-system hierarchy to adjust granularity
+// * Create error UI tailored to specific segments using the file-system hierarchy to adjust granularity
+
+// * error.tsx will handle error to closest parent error boundary
+
+// * move error.tsx file up the hierarchy and it takes care of more routes including previousr route

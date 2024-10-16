@@ -2,11 +2,11 @@ interface Props {
   productId: string;
 }
 
-export default function ProductPage({ params }: Props) {
+export default function ProductPage({ productId }: Props) {
   return (
     <>
       <h1>Product Details</h1>
-      <p>Product ID: {params.productId}</p>
+      <p>Product ID: {productId}</p>
     </>
   );
 }
