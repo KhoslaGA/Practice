@@ -1,10 +1,18 @@
 import React from "react";
 import Link from "next/link";
+function getRandomInt(count: number) {
+  return Math.floor(Math.random() * count);
+}
 
 type Props = {};
 
 const Products = (props: Props) => {
   const productId = 100;
+  const randomNo = getRandomInt(2);
+
+  if (randomNo === 1) {
+    throw new Error("Error loading Product");
+  }
   return (
     <>
       <Link href="/">Home </Link>

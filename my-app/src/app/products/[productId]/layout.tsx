@@ -1,3 +1,7 @@
+function getRandomInt(count: number) {
+  return Math.floor(Math.random() * count);
+}
+
 export default function ProductLayout({
   children,
 }: {
@@ -5,6 +9,11 @@ export default function ProductLayout({
     children: React.ReactNode;
   };
 }) {
+  const randomNo = getRandomInt(2);
+
+  if (randomNo === 1) {
+    throw new Error("Error loading Product");
+  }
   return (
     <>
       {children}
